@@ -102,8 +102,8 @@ if ($ve->has()) {
 	} else {
 		$assignment = $pk->getMyAssignment();
 		if ($assignment->approveNewConversationMessages()) {
-			$msg->approve();
-			//$msg->unapprove();
+			//$msg->approve();
+			$msg->unapprove();
 		}
 	}
 	if($_POST['attachments'] && count($_POST['attachments'])) {
